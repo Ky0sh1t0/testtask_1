@@ -1,0 +1,310 @@
+.container {
+    margin: 0 auto;
+}
+
+
+
+/* desktop */
+@media (width >= 992px){  
+    .container {
+        max-width: 1400px;
+    }
+
+    /* first task */
+    .first_block {
+        height: 200px;
+        display: flex;
+        justify-content: space-between;
+        gap: 10px;
+    }
+
+    .first_block div {
+        height: 100%;
+        width: 33%;
+        background-color: cyan;
+    }
+
+
+    /* second task */
+    .second_block {
+        height: 400px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .second_block div {
+        height: 47.5%;
+        width: 49.6%;
+        background-color: rgb(105, 105, 226);
+    }
+
+
+    /* third task */
+    .third_block {
+        height: 330px;
+        display: grid;
+        grid: repeat(3, 1fr) / repeat(4, 1fr);
+        gap: 10px;
+    }
+
+    .third_block div {
+        height: 100%;
+        width: 100%;
+        background-color: rgb(136, 143, 233);
+    }
+
+    .desktop_1 {
+        grid-row: 1;
+        grid-column: span 2;
+    }
+
+    .desktop_2 {
+        grid-row: 2;
+        grid-column: span 2;
+    }
+
+    .desktop_3 {
+        grid-row: 1 / span 2;
+        grid-column: span 2;
+    }
+
+    .desktop_4 {
+        grid-row: 3;
+        grid-column: span 3;
+    }
+
+    .desktop_5 {
+        grid-row: 3;
+        grid-column: 4;
+    }
+
+
+    /* fourth task */
+
+    .fourth_block {
+        background-color: rgb(184, 191, 194);
+        width: 100%;
+        height: 150px;
+        display: flex;
+        justify-content:space-between;
+        align-items: center;
+    }
+
+    .fourth_block .company_info {
+        display: flex;
+        flex-wrap: nowrap;
+        padding-left: 30px;
+        gap: 30px;
+    }
+
+    .fourth_block .button_search {
+        margin-right: 30px;
+        background-color: rgb(65, 65, 236);
+        height: 50px;
+        color: white;
+        width: 200px;
+    }
+
+    .fourth_block .button_search:hover {
+        background-color: rgb(79, 79, 252);
+    }
+
+
+    /* fifth task */
+    
+}
+    
+/* tablet */
+@media (768px <= width <= 991px){
+    /* first task */
+    .container {
+        max-width: 991px;
+    }
+
+    .first_block {
+        height: 300px;
+        display: flex;
+        flex-wrap:wrap;
+        justify-content:unset;
+        gap: 10px;
+    }
+
+    .first_block div {
+        height: 40%;
+        width: 49.45%;
+        background-color: cyan;
+    }
+
+
+    /* second task */
+    .second_block {
+        height: 400px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .second_block div {
+        height: 47.5%;
+        width: 49.45%;
+        background-color: rgb(105, 105, 226);
+    }
+
+
+    /* third task */
+    .third_block {
+        height: 330px;
+        display: grid;
+        grid: repeat(4, 1fr) / repeat(2, 1fr);
+        gap: 10px;
+    }
+
+    .third_block div {
+        height: 100%;
+        width: 100%;
+        background-color: rgb(136, 143, 233);
+    }
+
+    .tablet_1 {
+        grid-row: 1;
+        grid-column: span 2;
+    }
+
+    .tablet_2 {
+        grid-row: 2;
+    }
+
+    .tablet_3 {
+        grid-row: span 2;
+        grid-column: 2;
+    }
+
+    .tablet_4 {
+        grid-row: 4;
+        grid-column: span 2;
+    }
+
+    .tablet_5 {
+        grid-row: 3;
+    }
+
+
+    /* fourth task */
+    .fourth_block {
+        background-color: rgb(184, 191, 194);
+        width: 100%;
+        height: 200px;
+        display: grid;
+        align-items: center;
+        grid: 1 / 2;
+    }
+    
+    .fourth_block .company_info {
+        padding-top: 10px;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: nowrap;
+        gap: 30px;
+        grid-row: 1;
+    }
+
+    .fourth_block .button_search {
+        margin: 0 auto;
+        background-color: rgb(65, 65, 236);
+        height: 50px;
+        color: white;
+        width: 200px;
+        grid-row: 2;
+    }
+
+    .fourth_block .button_search:hover {
+        background-color: rgb(79, 79, 252);
+    }
+}
+
+
+/* mobile */
+@media (max-width: 767px) {
+    /* first task */
+    .container {
+        max-width: 767px;
+    }
+
+    .first_block {
+        height: 300px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .first_block div{
+        height: 30%;
+        width: 100%;
+        background-color: cyan;
+    }
+
+
+    /* second task */
+    .second_block {
+        height: 100px;
+        display: flex;
+        gap: 10px;
+    }
+
+    .second_block div {
+        height: 70%;
+        width: 90%;
+        background-color: rgb(105, 105, 226);
+    }
+
+    /* third task */
+    .third_block {
+        height: 400px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .third_block div {
+        height: 17%;
+        width: 100%;
+        background-color: rgb(136, 143, 233);
+    }
+
+    /* fourth task */
+    .fourth_block {
+        background-color: rgb(184, 191, 194);
+        width: 100%;
+        height: 300px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .break {
+        flex-basis: 100%;
+        height: 0;
+    }
+
+    .description {
+        padding-left: 10px;
+    }
+
+
+    .fourth_block .button_search {
+        background-color: rgb(65, 65, 236);
+        height: 50px;
+        color: white;
+        width: 200px;
+        margin-bottom: 5px;
+    }
+
+    .fourth_block .button_search:hover {
+        background-color: rgb(79, 79, 252);
+    }
+
+}
+
+
