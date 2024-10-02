@@ -1,0 +1,211 @@
+.container {
+  margin: 0 auto;
+  max-width: 1600px;
+  font-size: 1.5rem; }
+
+h1, h2, h3 {
+  margin: 0;
+  margin-bottom: 5px;
+  font-size: 2rem; }
+
+.wrapper {
+  margin-bottom: 40px; }
+
+.line {
+  min-height: 200px; }
+
+.div-description {
+  overflow-wrap: break-word; }
+
+.btn-to {
+  background-color: #4141ec;
+  width: 100%;
+  height: 50px;
+  color: white;
+  border: none; }
+  .btn-to:hover {
+    background-color: #4f4ffc; }
+
+.first-block {
+  display: flex;
+  gap: 10px; }
+  .first-block .line {
+    width: calc((100% - 10px * 2) / 3);
+    background-color: cyan; }
+
+.second-block {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px; }
+  .second-block .line {
+    width: calc((100% - 10px) / 2);
+    background-color: #6969e2; }
+
+.third-block {
+  display: grid;
+  grid-template-areas: 'line1 line1 line3 line3' 'line2 line2 line3 line3' 'line4 line4 line4 line5';
+  gap: 10px; }
+  .third-block div {
+    background-color: #888fe9; }
+  .third-block .grid-line1 {
+    grid-area: line1; }
+  .third-block .grid-line2 {
+    grid-area: line2; }
+  .third-block .grid-line3 {
+    min-height: 400px;
+    grid-area: line3; }
+  .third-block .grid-line4 {
+    min-height: 150px;
+    grid-area: line4; }
+  .third-block .grid-line5 {
+    grid-area: line5; }
+
+.card-company {
+  background-color: whitesmoke;
+  display: flex;
+  align-items: center;
+  min-height: 100px;
+  padding: 10px; }
+  .card-company .div-img {
+    height: 100px;
+    border-radius: 100%;
+    overflow: hidden;
+    flex: none; }
+    .card-company .div-img .image {
+      height: 100%;
+      width: 100%;
+      object-fit: cover; }
+  .card-company .div-info {
+    margin-left: 10px; }
+    .card-company .div-info .div-title {
+      font-weight: bold;
+      font-size: 2rem; }
+  .card-company .div-btn {
+    margin-left: auto;
+    flex: none; }
+
+#product-cart .div-flex {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px; }
+
+.product-card {
+  background-color: #dbdbdb;
+  display: flex;
+  flex-direction: column; }
+  .product-card .image-part {
+    margin: 0 auto; }
+    .product-card .image-part .image-product {
+      height: 100%;
+      width: 100%;
+      object-fit: cover; }
+  .product-card .description {
+    background-color: silver;
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column; }
+    .product-card .description .description-text {
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+      overflow: hidden; }
+    .product-card .description .btn-to {
+      margin-top: auto; }
+  @media (max-width: 991px) {
+    .product-card .container {
+      max-width: 991px; }
+    .product-card .first-block {
+      flex-wrap: wrap; }
+      .product-card .first-block .line {
+        width: calc(50% - 10px);
+        background-color: cyan; } }
+
+@media (max-width: 991px) {
+  .third-block {
+    display: grid;
+    grid-template-areas: 'line1 line1 line1 line1' 'line2 line2 line3 line3' 'line5 line5 line3 line3' 'line4 line4 line4 line4';
+    gap: 10px; }
+
+  .grid-line1 {
+    min-height: 200px;
+    grid-area: line1; }
+
+  .grid-line2 {
+    min-height: 200px;
+    grid-area: line2; }
+
+  .grid-line3 {
+    min-height: 200px;
+    grid-area: line3; }
+
+  .grid-line4 {
+    min-height: 150px;
+    grid-area: line4; }
+
+  .grid-line5 {
+    min-height: 150px;
+    grid-area: line5; }
+
+  .fourth-block {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; }
+
+  .company-info {
+    inline-size: calc(100% - 110px); }
+
+  .fourth-block .btn-to {
+    margin-left: unset;
+    margin: 0 auto; }
+
+  .div-flex .product-card {
+    min-width: calc((100% - 20px) / 3); } }
+@media (max-width: 767px) {
+  .container {
+    max-width: 767px; }
+
+  .first-block, .second-block {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; }
+
+  .first-block .line {
+    width: 100%;
+    background-color: cyan; }
+
+  .second-block .line {
+    width: 100%;
+    background-color: darkblue; }
+
+  .third-block {
+    display: flex;
+    flex-wrap: wrap; }
+
+  .grid-line1, .grid-line2 {
+    width: 100%;
+    min-height: 200px; }
+
+  .grid-line3 {
+    width: 100%;
+    min-height: 350px; }
+
+  .grid-line4, .grid-line5 {
+    width: 100%;
+    min-height: 150px; }
+
+  .fourth-block {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+
+  .company-info {
+    text-align: center;
+    inline-size: 100%; }
+
+  .div-flex .product-card {
+    min-width: 100%; } }
+
+/*# sourceMappingURL=style.css.map */
